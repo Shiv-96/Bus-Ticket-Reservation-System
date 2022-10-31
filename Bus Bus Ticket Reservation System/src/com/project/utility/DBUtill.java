@@ -12,9 +12,7 @@ public class DBUtill {
 		Connection conn = null;
 		
 		try {
-			
 			Class.forName("com.mysql.cj.jdbc.Driver");
-			
 		} catch (ClassNotFoundException e) {
 			e.printStackTrace();
 		}
@@ -22,10 +20,10 @@ public class DBUtill {
 		String url = "jdbc:mysql://localhost:3306/BusTicketReservation";
 		
 		try {
-			
-			conn = DriverManager.getConnection(url, "root", "Shiv");
+			conn = DriverManager.getConnection(url, "root", "shiv");
 			
 		} catch (SQLException e) {
+			// TODO: handle exception
 			
 			e.printStackTrace();
 			
